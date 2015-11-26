@@ -29,6 +29,11 @@ git config --global alias.cp "cherry-pick"
 ```
 
 <br />
+po = "<b>p</b>ush <b>o</b>rigin"
+```
+git config --global alias.po "push origin"
+```
+<br />
 pom = "<b>p</b>ush <b>o</b>rigin <b>m</b>aster"
 ```
 git config --global alias.pom "push origin master"
