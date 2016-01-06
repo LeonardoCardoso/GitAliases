@@ -106,4 +106,28 @@ git config --global alias.alias "! git config --get-regexp ^alias\. | sed -e s/^
 ```
 
 <br />
+fom = "<b>f</b>etch <b>o</b>rigin <b>m</b>aster:master"
+```
+git config --global alias.fom "fetch origin master:master"
+```
+
+<br />
+fod = "<b>f</b>etch <b>o</b>rigin <b>m</b>dev:dev"
+```
+git config --global alias.fod "fetch origin dev:dev"
+```
+
+<br />
+mm = "<b>m</b>erge <b>m</b>aster"
+```
+git config --global alias.mm "merge master"
+```
+
+<br />
+md = "<b>m</b>erge <b>d</b>ev"
+```
+git config --global alias.md "merge dev"
+```
+
+<br />
 <b>Feel free to fork and PR!</b>
