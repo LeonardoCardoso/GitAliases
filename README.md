@@ -1,133 +1,185 @@
 # Git Aliases
-Some useful Git aliases to optimize your time!
+Some useful Git aliases to optimise your time!
 
 
 <br />
-<b>Add them with git config --global alias.{{your shortcut}} "{{git command}}"</b>
+**Add them with git config --global alias.{{your shortcut}} "{{git command}}"**
 
-<br />
-co = "<b>co</b>mmit"
-```
-git config --global alias.co "commit"
-```
-<br />
-cane = "<b>c</b>ommit --<b>a</b>mend --<b>n</b>o-<b>e</b>dit"
-```
-git config --global alias.cane "commit --amend --no-edit"
-```
+* a = "**a**dd ."
+	
+	```
+	git config --global alias.a "add ."
+	```
 
-<br />
-ca = "<b>c</b>ommit --<b>a</b>mend"
-```
-git config --global alias.ca "commit --amend"
-```
+* alias = "! git config --get-regexp ^**alias**\. | sed -e s/^alias\.// -e s/\ /\ =\ /"
 
-<br />
-cp = "<b>c</b>herry-<b>p</b>ick"
-```
-git config --global alias.cp "cherry-pick"
-```
+	```
+	git config --global alias.alias "! git config --get-regexp ^alias\. | sed -e s/^alias\.// -e s/\ /\ =\ /"
+	```
 
-<br />
-po = "<b>p</b>ush <b>o</b>rigin"
-```
-git config --global alias.po "push origin"
-```
-<br />
-pom = "<b>p</b>ush <b>o</b>rigin <b>m</b>aster"
-```
-git config --global alias.pom "push origin master"
-```
+* arane = "commit --**a**mend --**r**eset-**a**uthor --**n**o-**e**dit"
 
-<br />
-pfom = "<b>p</b>ush -<b>f</b> <b>o</b>rigin <b>m</b>aster"
-```
-git config --global alias.pfom "push -f origin master"
-```
+	```
+	git config --global alias.arane "commit --amend --reset-author --no-edit"
+	```
 
-<br />
-fu = "add . && git commit --amend --no-edit && git push -<b>f</b> origin master"
-```
-git config --global alias.fu "add . && git commit --amend --no-edit && git push -f origin master"
-```
 
-<br />
-cm = "<b>c</b>ommit -<b>m</b>"
-```
-git config --global alias.cm "commit -m"
-```
+* ca = "**c**ommit --**a**mend"
 
-<br />
-a = "<b>a</b>dd ."
-```
-git config --global alias.a "add ."
-```
+	```
+	git config --global alias.ca "commit --amend"
+	```
 
-<br />
-puom = "<b>pu</b>ll <b>o</b>rigin <b>m</b>aster"
-```
-git config --global alias.puom "pull origin master"
-```
+* cane = "**c**ommit --**a**mend --**n**o-**e**dit"
+	
+	```
+	git config --global alias.cane "commit --amend --no-edit"
+	```
 
-<br />
-rao = "<b>r</b>emote <b>a</b>dd <b>o</b>rigin"
-```
-git config --global alias.rao "remote add origin"
-```
 
-<br />
-logi = "<b>log</b> --pretty=onel<b>i</b>ne"
-```
-git config --global alias.logi "log --pretty=oneline"
-```
 
-<br />
-logi = "<b>log</b> --pretty=onel<b>i</b>ne"
-```
-git config --global alias.logi "log --pretty=oneline"
-```
+* cc = "**c**he**c**kout"
 
-<br />
-ck = "<b>c</b>hec<b>k</b>out"
-```
-git config --global alias.ck "checkout"
-```
+	```
+	git config --global alias.cc "checkout"
+	```
 
-<br />
-ckm = "<b>c</b>hec<b>k</b>out <b>m</b>aster"
-```
-git config --global alias.ckm "checkout master"
-```
+* ck = "**c**hec**k**out"
 
-<br />
-alias = "! git config --get-regexp ^alias\. | sed -e s/^alias\.// -e s/\ /\ =\ /"
-```
-git config --global alias.alias "! git config --get-regexp ^alias\. | sed -e s/^alias\.// -e s/\ /\ =\ /"
-```
+	```
+	git config --global alias.ck "checkout"
+	```
 
-<br />
-fom = "<b>f</b>etch <b>o</b>rigin <b>m</b>aster:master"
-```
-git config --global alias.fom "fetch origin master:master"
-```
+* ckd = "**c**hec**k**out **d**ev"
 
-<br />
-fod = "<b>f</b>etch <b>o</b>rigin <b>m</b>dev:dev"
-```
-git config --global alias.fod "fetch origin dev:dev"
-```
+	```
+	git config --global alias.ckd "checkout dev"
+	```
 
-<br />
-mm = "<b>m</b>erge <b>m</b>aster"
-```
-git config --global alias.mm "merge master"
-```
+* ckm = "**c**hec**k**out **m**aster"
 
-<br />
-md = "<b>m</b>erge <b>d</b>ev"
-```
-git config --global alias.md "merge dev"
-```
+	```
+	git config --global alias.ckm "checkout master"
+	```
 
-<br />
-<b>Feel free to fork and PR!</b>
+
+* cm = "**c**ommit -**m**"
+
+	```
+	git config --global alias.cm "commit -m"
+	```
+
+* co = "**co**mmit"
+
+	```
+	git config --global alias.co "commit"
+	```
+
+* cp = "**c**herry-**p**ick"
+	
+	```
+	git config --global alias.cp "cherry-pick"
+	```
+	
+* dom = "**d**iff --stat **o**rigin/**m**aster"
+
+	```
+	git config --global alias.dom "diff --stat origin/master"
+	```
+
+* fod = "**f**etch **o**rigin **m**dev:dev"
+
+	```
+	git config --global alias.fod "fetch origin dev:dev"
+	```
+
+* fom = "**f**etch **o**rigin **m**aster:master"
+	
+	```
+	git config --global alias.fom "fetch origin master:master"
+	```
+
+
+* fu = "add . && git commit --amend --no-edit && git push -**f** origin master"
+
+	```
+	git config --global alias.fu "add . && git commit --amend --no-edit && git push -f origin master"
+	```
+
+* logi = "**log** --pretty=onel**i**ne"
+
+	```
+	git config --global alias.logi "log --pretty=oneline"
+	```
+
+* md = "**m**erge **d**ev"
+
+	```
+	git config --global alias.md "merge dev"
+	```
+
+* mm = "**m**erge **m**aster"
+	
+	```
+	git config --global alias.mm "merge master"
+	```
+
+* pod = "**p**ush **o**rigin **d**ev"
+	
+	```
+	git config --global alias.pod "push origin dev"
+	```
+
+* pfo = "**p**ush -**f** **o**rigin"
+	
+	```
+	git config --global alias.pfom "push -f origin"
+	```
+	
+* pfod = "**p**ush -**f** **o**rigin **d**ev"
+	
+	```
+	git config --global alias.pfom "push -f origin dev"
+	```
+
+* pfom = "**p**ush -**f** **o**rigin **m**aster"
+	
+	```
+	git config --global alias.pfom "push -f origin master"
+	```
+
+* po = "**p**ush **o**rigin"
+
+	```
+	git config --global alias.po "push origin"
+	```
+
+* pom = "**p**ush **o**rigin **m**aster"
+	
+	```
+	git config --global alias.pom "push origin master"
+	```
+
+
+
+* puo = "**pu**ll **o**rigin"
+	
+	```
+	git config --global alias.puo** "pull origin"
+	```
+
+
+* puom = "**pu**ll **o**rigin **m**aster"
+	
+	```
+	git config --global alias.puom "pull origin master"
+	```
+
+
+* rao = "**r**emote **a**dd **o**rigin"
+
+	```
+	git config --global alias.rao "remote add origin"
+	```
+
+Feel free to fork and PR! 🚀
