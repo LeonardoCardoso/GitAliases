@@ -87,6 +87,12 @@ Some useful Git aliases to optimise your time!
 	git config --global alias.dom "diff --stat origin/master"
 	```
 
+* ft = "**f**etch --**t**ags"
+
+	```
+	git fetch --tags
+	```
+	
 * fod = "**f**etch **o**rigin **m**dev:dev"
 
 	```
@@ -159,8 +165,11 @@ Some useful Git aliases to optimise your time!
 	```
 	git config --global alias.pom "push origin master"
 	```
+* pomt = "**p**ush **o**rigin **m**aster --**t**ags"
 
-
+	```
+	git push origin master --tags
+	```
 
 * puo = "**pu**ll **o**rigin"
 	

@@ -16,6 +16,7 @@ git config --global alias.cp "cherry-pick"
 
 git config --global alias.dom "diff --stat origin/master"
 
+git config --global alias.ft "fetch --tags"
 git config --global alias.fod "fetch origin dev:dev"
 git config --global alias.fom "fetch origin master:master"
 git config --global alias.fu "add . && git commit --amend --no-edit && git push -f origin master"
@@ -31,6 +32,7 @@ git config --global alias.pfod "push -f origin dev"
 git config --global alias.pfom "push -f origin master"
 git config --global alias.po "push origin"
 git config --global alias.pom "push origin master"
+git config --global alias.pomt "push origin master --tags"
 git config --global alias.puo "pull origin"
 git config --global alias.puom "pull origin master"
 
