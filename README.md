@@ -139,7 +139,7 @@ Some useful Git aliases to optimise your time!
 * pfo = "**p**ush -**f** **o**rigin"
 	
 	```
-	git config --global alias.pfom "push -f origin"
+	git config --global alias.pfo "push -f origin"
 	```
 	
 * pfod = "**p**ush -**f** **o**rigin **d**ev"
