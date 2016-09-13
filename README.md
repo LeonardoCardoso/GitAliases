@@ -174,7 +174,7 @@ Some useful Git aliases to optimise your time!
 * puo = "**pu**ll **o**rigin"
 	
 	```
-	git config --global alias.puo** "pull origin"
+	git config --global alias.puo "pull origin"
 	```
 
 
@@ -183,7 +183,7 @@ Some useful Git aliases to optimise your time!
 	```
 	git config --global alias.puom "pull origin master"
 	```
-
+p
 
 * rao = "**r**emote **a**dd **o**rigin"
 
