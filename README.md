@@ -80,6 +80,24 @@ Some useful Git aliases to optimise your time!
 	```
 	git config --global alias.cp "cherry-pick"
 	```
+
+* csa = "**c**ommit -**S** --**a**mend"
+	
+	```
+	git config --global alias.csa "commit -S --amend"
+	```
+
+* csane = "**c**ommit -**S** --**a**mend --**n**o-**e**dit"
+	
+	```
+	git config --global alias.csane "commit -S --amend --no-edit"
+	```
+
+* csm = "**c**ommit -**S** -**m**"
+	
+	```
+	git config --global alias.csm "commit -S -m"
+	```
 	
 * dom = "**d**iff --stat **o**rigin/**m**aster"
 
