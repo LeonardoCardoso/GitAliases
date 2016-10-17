@@ -13,6 +13,9 @@ git config --global alias.ckm "checkout master"
 git config --global alias.cm "commit -m"
 git config --global alias.co "commit"
 git config --global alias.cp "cherry-pick"
+git config --global alias.csm "commit -S -m"
+git config --global alias.csa "commit -S --amend"
+git config --global alias.csane "commit -S --amend --no-edit"
 
 git config --global alias.dom "diff --stat origin/master"
 
