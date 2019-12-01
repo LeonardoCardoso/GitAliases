@@ -1,5 +1,5 @@
 # Git Aliases
-Some useful Git aliases to optimise your time!
+Some useful Git aliases to optimize your time!
 
 
 <br />
